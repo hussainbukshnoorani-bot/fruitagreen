@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 176" role="img" aria-label="FRUITA GREEN fruit basket icon">
+  <circle cx="88" cy="88" r="88" fill="#CDEAC0"/>
+  <g transform="translate(29,29) scale(1.18)">
+    <path d="M30,57 C30,32 70,32 70,57" fill="none" stroke="#B9834C" stroke-width="6" stroke-linecap="round"/>
+    <path d="M18,58 L82,58 L73,90 Q50,97 27,90 Z" fill="#B9834C"/>
+    <rect x="16" y="55" width="68" height="6" rx="3" fill="#A9713F"/>
+    <line x1="22" y1="68" x2="78" y2="68" stroke="#8C5F32" stroke-width="2" stroke-linecap="round"/>
+    <line x1="24" y1="77" x2="76" y2="77" stroke="#8C5F32" stroke-width="2" stroke-linecap="round"/>
+    <line x1="28" y1="86" x2="72" y2="86" stroke="#8C5F32" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="48" cy="30" r="5" fill="#7B5EA7"/>
+    <circle cx="54" cy="28" r="5" fill="#7B5EA7"/>
+    <circle cx="51" cy="35" r="5" fill="#7B5EA7"/>
+    <circle cx="45" cy="36" r="4.5" fill="#7B5EA7"/>
+    <line x1="51" y1="25" x2="51" y2="20" stroke="#6B4A2B" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="56" cy="21" rx="6" ry="3" fill="#5FA34A" transform="rotate(20 56 21)"/>
+    <path d="M50,58 C46,50 46,42 50,36 C54,42 54,50 50,58 Z" fill="#E2672B"/>
+    <line x1="50" y1="36" x2="46" y2="27" stroke="#5FA34A" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="50" y1="36" x2="50" y2="24" stroke="#5FA34A" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="50" y1="36" x2="54" y2="27" stroke="#5FA34A" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="32" cy="45" r="13" fill="#D6483F"/>
+    <line x1="32" y1="32" x2="34" y2="25" stroke="#6B4A2B" stroke-width="2.5" stroke-linecap="round"/>
+    <ellipse cx="38" cy="27" rx="7" ry="3.5" fill="#5FA34A" transform="rotate(-25 38 27)"/>
+    <circle cx="68" cy="43" r="12" fill="#EFA33D"/>
+    <circle cx="68" cy="32" r="2.2" fill="#5FA34A"/>
+  </g>
+</svg>
