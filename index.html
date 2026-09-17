@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FRUITA GREEN — Fresh Fruits &amp; Vegetables Delivered</title>
+<meta name="description" content="FRUITA GREEN sources the freshest fruits and vegetables from local farms and delivers them to your door within hours.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+	<div class="site-header__inner">
+		<a href="index.html" class="site-title">FRUITA GREEN</a>
+		<nav class="main-navigation">
+			<ul>
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="header-actions">
+			<button type="button" class="cart-toggle" aria-label="Open cart">🛒 Cart <span class="cart-count">0</span></button>
+			<button type="button" class="nav-toggle" aria-label="Toggle menu">☰</button>
+		</div>
+	</div>
+</header>
+
+<main>
+
+	<section class="fg-hero">
+		<span class="fg-hero__eyebrow">Farm-fresh, delivered today</span>
+		<h1 class="fg-hero__title">Fresh fruits &amp; veggies,<br><span>straight to your door.</span></h1>
+		<p class="fg-hero__subtitle">FRUITA GREEN sources the freshest fruits and vegetables from local farms and gets them to you within hours — no middlemen, no wilting shelves.</p>
+		<div class="fg-hero__actions">
+			<a class="button alt" href="shop.html">Shop Now</a>
+			<a class="button outline" href="#fg-categories">Browse Categories</a>
+		</div>
+	</section>
+
+	<section class="fg-trust">
+		<div class="fg-trust__item">
+			<span class="fg-trust__icon">🌱</span>
+			<span class="fg-trust__label">100% Fresh</span>
+			<p class="fg-trust__desc">Picked and delivered within 24 hours</p>
+		</div>
+		<div class="fg-trust__item">
+			<span class="fg-trust__icon">🚚</span>
+			<span class="fg-trust__label">Fast Delivery</span>
+			<p class="fg-trust__desc">Same-day delivery in your area</p>
+		</div>
+		<div class="fg-trust__item">
+			<span class="fg-trust__icon">🌿</span>
+			<span class="fg-trust__label">Organic Options</span>
+			<p class="fg-trust__desc">Certified organic picks available</p>
+		</div>
+		<div class="fg-trust__item">
+			<span class="fg-trust__icon">💳</span>
+			<span class="fg-trust__label">Secure Checkout</span>
+			<p class="fg-trust__desc">Cash on delivery or card, your choice</p>
+		</div>
+	</section>
+
+	<section class="fg-section" id="fg-categories">
+		<div class="fg-section__header">
+			<h2>Shop by Category</h2>
+			<p>Everything you need, sorted fresh.</p>
+		</div>
+		<div class="fg-categories">
+			<a class="fg-category-card" data-filter="fresh-fruits" href="shop.html?cat=fresh-fruits">
+				<span class="fg-category-card__icon">🍎</span>
+				<span class="fg-category-card__title">Fresh Fruits</span>
+				<span class="fg-category-card__count">5 items</span>
+			</a>
+			<a class="fg-category-card" data-filter="fresh-vegetables" href="shop.html?cat=fresh-vegetables">
+				<span class="fg-category-card__icon">🥦</span>
+				<span class="fg-category-card__title">Fresh Vegetables</span>
+				<span class="fg-category-card__count">5 items</span>
+			</a>
+			<a class="fg-category-card" data-filter="organic-picks" href="shop.html?cat=organic-picks">
+				<span class="fg-category-card__icon">🌿</span>
+				<span class="fg-category-card__title">Organic Picks</span>
+				<span class="fg-category-card__count">3 items</span>
+			</a>
+			<a class="fg-category-card" data-filter="combos-bundles" href="shop.html?cat=combos-bundles">
+				<span class="fg-category-card__icon">🧺</span>
+				<span class="fg-category-card__title">Combos &amp; Bundles</span>
+				<span class="fg-category-card__count">2 items</span>
+			</a>
+		</div>
+	</section>
+
+	<section class="fg-section">
+		<div class="fg-section__header">
+			<h2>Best Sellers This Week</h2>
+			<p>Our customers' favorite picks, restocked daily.</p>
+		</div>
+		<div class="products-grid" id="featured-products"></div>
+	</section>
+
+	<section class="fg-section">
+		<div class="fg-why">
+			<div class="fg-section__header">
+				<h2>Why FRUITA GREEN?</h2>
+				<p>We're not just another grocery app.</p>
+			</div>
+			<div class="fg-why-grid">
+				<div class="fg-why-item">
+					<span class="fg-why-item__icon">🚜</span>
+					<h3>Direct from farms</h3>
+					<p>We buy directly from local growers, skipping the wholesale markup.</p>
+				</div>
+				<div class="fg-why-item">
+					<span class="fg-why-item__icon">❄️</span>
+					<h3>Cold-chain fresh</h3>
+					<p>Refrigerated from harvest to your doorstep — nothing wilts in transit.</p>
+				</div>
+				<div class="fg-why-item">
+					<span class="fg-why-item__icon">✅</span>
+					<h3>Quality guarantee</h3>
+					<p>Not happy with an item? We'll replace or refund it, no questions asked.</p>
+				</div>
+				<div class="fg-why-item">
+					<span class="fg-why-item__icon">💚</span>
+					<h3>Fair prices for farmers</h3>
+					<p>Every order supports the growers who make FRUITA GREEN possible.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="fg-section">
+		<div class="fg-newsletter">
+			<h2>Get 10% Off Your First Order</h2>
+			<p>Join our list for weekly harvest updates and exclusive discounts.</p>
+			<form class="fg-newsletter-form">
+				<input type="email" placeholder="you@example.com" required>
+				<button type="submit" class="button">Subscribe</button>
+			</form>
+		</div>
+	</section>
+
+</main>
+
+<footer class="site-footer">
+	<div class="container">
+		<div>
+			<a href="index.html" class="site-title" style="color:#fff;">FRUITA GREEN</a>
+			<p style="margin-top:12px;">Fresh, fairly priced, and fairly sourced — delivered from local farms to your door.</p>
+		</div>
+		<div>
+			<h4>Shop</h4>
+			<ul>
+				<li><a href="shop.html?cat=fresh-fruits">Fresh Fruits</a></li>
+				<li><a href="shop.html?cat=fresh-vegetables">Fresh Vegetables</a></li>
+				<li><a href="shop.html?cat=organic-picks">Organic Picks</a></li>
+				<li><a href="shop.html?cat=combos-bundles">Combos &amp; Bundles</a></li>
+			</ul>
+		</div>
+		<div>
+			<h4>Company</h4>
+			<ul>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div>
+			<h4>Contact</h4>
+			<ul>
+				<li>hello@fruitagreen.local</li>
+				<li>(555) 010-2026</li>
+				<li>Mon–Sat, 8am – 6pm</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer-bottom">&copy; 2026 FRUITA GREEN. All rights reserved.</div>
+</footer>
+
+<div class="cart-overlay"></div>
+<div class="cart-drawer">
+	<div class="cart-drawer__header">
+		<h3>Your Cart</h3>
+		<button type="button" class="cart-drawer__close" aria-label="Close cart">&times;</button>
+	</div>
+	<div class="cart-drawer__items"></div>
+	<div class="cart-drawer__footer">
+		<div class="cart-drawer__subtotal"><span>Subtotal</span><span class="cart-drawer__subtotal-value">$0.00</span></div>
+		<button type="button" class="button alt cart-drawer__checkout">Place Order</button>
+		<p class="cart-confirm">Thanks! This is a demo storefront, so no payment is taken here — call <strong>(555) 010-2026</strong> or email <strong>hello@fruitagreen.local</strong> with your cart and we'll confirm delivery.</p>
+	</div>
+</div>
+<div class="toast"></div>
+
+<script>window.FG_DEFER_INIT = true;</script>
+<script src="products.js"></script>
+<script src="script.js"></script>
+<script>
+	(function () {
+		var ids = ['15', '16', '17', '19', '20', '21', '24', '25'];
+		var grid = document.getElementById('featured-products');
+		grid.innerHTML = ids.map(function (id) {
+			var p = window.FG_PRODUCTS.find(function (x) { return x.id === id; });
+			var onSale = p.price < p.regularPrice;
+			var isOrganic = p.categories.indexOf('organic-picks') !== -1;
+			var badge = onSale ? '<span class="fg-badge fg-badge--sale">Sale</span>' : (isOrganic ? '<span class="fg-badge fg-badge--organic">Organic</span>' : '');
+			var priceHtml = onSale
+				? '<span class="was">$' + p.regularPrice.toFixed(2) + '</span><span class="now">$' + p.price.toFixed(2) + '</span>'
+				: '$' + p.price.toFixed(2);
+			return (
+				'<div class="product-card">' +
+					badge +
+					'<div class="product-card__media">' + p.icon + '</div>' +
+					'<div class="product-card__title">' + p.title + '</div>' +
+					'<div class="product-card__desc">' + p.desc + '</div>' +
+					'<div class="product-card__price">' + priceHtml + '</div>' +
+					'<div class="product-card__actions"><button type="button" class="button" data-add-to-cart="' + p.id + '">Add to Cart</button></div>' +
+				'</div>'
+			);
+		}).join('');
+		fgInit();
+	})();
+</script>
+</body>
+</html>

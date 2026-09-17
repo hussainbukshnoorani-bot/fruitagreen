@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — FRUITA GREEN</title>
+<meta name="description" content="FRUITA GREEN sources the freshest fruits and vegetables directly from local farms.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+	<div class="site-header__inner">
+		<a href="index.html" class="site-title">FRUITA GREEN</a>
+		<nav class="main-navigation">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="about.html" class="active">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="header-actions">
+			<button type="button" class="cart-toggle" aria-label="Open cart">🛒 Cart <span class="cart-count">0</span></button>
+			<button type="button" class="nav-toggle" aria-label="Toggle menu">☰</button>
+		</div>
+	</div>
+</header>
+
+<main>
+	<section class="fg-section">
+		<div class="fg-section__header">
+			<h2>About Us</h2>
+			<p>Fresh, fairly priced, and fairly sourced.</p>
+		</div>
+
+		<div class="fg-prose">
+			<h2>Our Story</h2>
+			<p>FRUITA GREEN started with a simple idea: the fruits and vegetables on your table should taste like they were picked yesterday, because they were. We work directly with local farms to cut out the middlemen, the warehouses, and the days of transit that leave produce tired and flavorless.</p>
+
+			<h2>What We Do</h2>
+			<p>Every morning our team sources the day's freshest fruits and vegetables, checks them for quality, and gets them packed and on their way to you — usually within hours of harvest. Whether it's a quick grocery top-up or your weekly veggie box, we treat every order like it's going to our own kitchen.</p>
+
+			<h2>Our Promise</h2>
+			<p>Fresh, fairly priced, and fairly sourced. If something doesn't meet our standard, we'll make it right — no questions asked.</p>
+		</div>
+	</section>
+
+	<section class="fg-section">
+		<div class="fg-why">
+			<div class="fg-section__header">
+				<h2>Why FRUITA GREEN?</h2>
+				<p>We're not just another grocery app.</p>
+			</div>
+			<div class="fg-why-grid">
+				<div class="fg-why-item">
+					<span class="fg-why-item__icon">🚜</span>
+					<h3>Direct from farms</h3>
+					<p>We buy directly from local growers, skipping the wholesale markup.</p>
+				</div>
+				<div class="fg-why-item">
+					<span class="fg-why-item__icon">❄️</span>
+					<h3>Cold-chain fresh</h3>
+					<p>Refrigerated from harvest to your doorstep — nothing wilts in transit.</p>
+				</div>
+				<div class="fg-why-item">
+					<span class="fg-why-item__icon">✅</span>
+					<h3>Quality guarantee</h3>
+					<p>Not happy with an item? We'll replace or refund it, no questions asked.</p>
+				</div>
+				<div class="fg-why-item">
+					<span class="fg-why-item__icon">💚</span>
+					<h3>Fair prices for farmers</h3>
+					<p>Every order supports the growers who make FRUITA GREEN possible.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="fg-section" style="text-align:center;">
+		<a class="button alt" href="shop.html">Shop Now</a>
+	</section>
+</main>
+
+<footer class="site-footer">
+	<div class="container">
+		<div>
+			<a href="index.html" class="site-title" style="color:#fff;">FRUITA GREEN</a>
+			<p style="margin-top:12px;">Fresh, fairly priced, and fairly sourced — delivered from local farms to your door.</p>
+		</div>
+		<div>
+			<h4>Shop</h4>
+			<ul>
+				<li><a href="shop.html?cat=fresh-fruits">Fresh Fruits</a></li>
+				<li><a href="shop.html?cat=fresh-vegetables">Fresh Vegetables</a></li>
+				<li><a href="shop.html?cat=organic-picks">Organic Picks</a></li>
+				<li><a href="shop.html?cat=combos-bundles">Combos &amp; Bundles</a></li>
+			</ul>
+		</div>
+		<div>
+			<h4>Company</h4>
+			<ul>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div>
+			<h4>Contact</h4>
+			<ul>
+				<li>hello@fruitagreen.local</li>
+				<li>(555) 010-2026</li>
+				<li>Mon–Sat, 8am – 6pm</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer-bottom">&copy; 2026 FRUITA GREEN. All rights reserved.</div>
+</footer>
+
+<div class="cart-overlay"></div>
+<div class="cart-drawer">
+	<div class="cart-drawer__header">
+		<h3>Your Cart</h3>
+		<button type="button" class="cart-drawer__close" aria-label="Close cart">&times;</button>
+	</div>
+	<div class="cart-drawer__items"></div>
+	<div class="cart-drawer__footer">
+		<div class="cart-drawer__subtotal"><span>Subtotal</span><span class="cart-drawer__subtotal-value">$0.00</span></div>
+		<button type="button" class="button alt cart-drawer__checkout">Place Order</button>
+		<p class="cart-confirm">Thanks! This is a demo storefront, so no payment is taken here — call <strong>(555) 010-2026</strong> or email <strong>hello@fruitagreen.local</strong> with your cart and we'll confirm delivery.</p>
+	</div>
+</div>
+<div class="toast"></div>
+
+<script src="products.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

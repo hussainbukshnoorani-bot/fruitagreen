@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — FRUITA GREEN</title>
+<meta name="description" content="Get in touch with FRUITA GREEN about an order, a delivery, or anything else.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+	<div class="site-header__inner">
+		<a href="index.html" class="site-title">FRUITA GREEN</a>
+		<nav class="main-navigation">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html" class="active">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="header-actions">
+			<button type="button" class="cart-toggle" aria-label="Open cart">🛒 Cart <span class="cart-count">0</span></button>
+			<button type="button" class="nav-toggle" aria-label="Toggle menu">☰</button>
+		</div>
+	</div>
+</header>
+
+<main>
+	<section class="fg-section">
+		<div class="fg-section__header">
+			<h2>Get in Touch</h2>
+			<p>Questions about an order, a delivery, or just want to say hi? Reach us any of these ways.</p>
+		</div>
+
+		<div class="fg-contact-grid">
+			<div class="fg-contact-info">
+				<h3 style="margin-top:0;">Reach Us Directly</h3>
+				<ul>
+					<li><span class="icon">✉️</span><span>Email<br><a href="mailto:hello@fruitagreen.local">hello@fruitagreen.local</a></span></li>
+					<li><span class="icon">📞</span><span>Phone<br><a href="tel:+15550102026">(555) 010-2026</a></span></li>
+					<li><span class="icon">🕒</span><span>Hours<br>Mon–Sat, 8am – 6pm</span></li>
+				</ul>
+				<p style="margin-top:20px; margin-bottom:0;">Prefer to write? Drop us a note and we'll get back to you within one business day.</p>
+			</div>
+
+			<form class="fg-form">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="message">Message</label>
+				<textarea id="message" name="message" rows="5" required></textarea>
+
+				<button type="submit" class="button alt">Send Message</button>
+				<p class="fg-form-note">We'll get back to you within one business day.</p>
+			</form>
+		</div>
+	</section>
+</main>
+
+<footer class="site-footer">
+	<div class="container">
+		<div>
+			<a href="index.html" class="site-title" style="color:#fff;">FRUITA GREEN</a>
+			<p style="margin-top:12px;">Fresh, fairly priced, and fairly sourced — delivered from local farms to your door.</p>
+		</div>
+		<div>
+			<h4>Shop</h4>
+			<ul>
+				<li><a href="shop.html?cat=fresh-fruits">Fresh Fruits</a></li>
+				<li><a href="shop.html?cat=fresh-vegetables">Fresh Vegetables</a></li>
+				<li><a href="shop.html?cat=organic-picks">Organic Picks</a></li>
+				<li><a href="shop.html?cat=combos-bundles">Combos &amp; Bundles</a></li>
+			</ul>
+		</div>
+		<div>
+			<h4>Company</h4>
+			<ul>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div>
+			<h4>Contact</h4>
+			<ul>
+				<li>hello@fruitagreen.local</li>
+				<li>(555) 010-2026</li>
+				<li>Mon–Sat, 8am – 6pm</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer-bottom">&copy; 2026 FRUITA GREEN. All rights reserved.</div>
+</footer>
+
+<div class="cart-overlay"></div>
+<div class="cart-drawer">
+	<div class="cart-drawer__header">
+		<h3>Your Cart</h3>
+		<button type="button" class="cart-drawer__close" aria-label="Close cart">&times;</button>
+	</div>
+	<div class="cart-drawer__items"></div>
+	<div class="cart-drawer__footer">
+		<div class="cart-drawer__subtotal"><span>Subtotal</span><span class="cart-drawer__subtotal-value">$0.00</span></div>
+		<button type="button" class="button alt cart-drawer__checkout">Place Order</button>
+		<p class="cart-confirm">Thanks! This is a demo storefront, so no payment is taken here — call <strong>(555) 010-2026</strong> or email <strong>hello@fruitagreen.local</strong> with your cart and we'll confirm delivery.</p>
+	</div>
+</div>
+<div class="toast"></div>
+
+<script src="products.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
