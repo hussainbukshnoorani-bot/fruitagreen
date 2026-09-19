@@ -222,14 +222,40 @@ function fgInit() {
 		});
 	});
 
-	// Contact form (no backend — just a friendly confirmation)
+	// Contact form — saves submissions to Supabase (contact_messages table)
 	var contactForm = document.querySelector('.fg-form');
 	if (contactForm) {
+		var fgSupabase = (window.supabase && window.FG_SUPABASE_URL)
+			? window.supabase.createClient(window.FG_SUPABASE_URL, window.FG_SUPABASE_ANON_KEY)
+			: null;
+
 		contactForm.addEventListener('submit', function (e) {
 			e.preventDefault();
 			var note = contactForm.querySelector('.fg-form-note');
-			if (note) note.textContent = "Thanks! We'll get back to you within one business day.";
-			contactForm.reset();
+			var submitBtn = contactForm.querySelector('button[type="submit"]');
+			if (!fgSupabase) {
+				if (note) note.textContent = "Sorry, something's misconfigured — please email us directly.";
+				return;
+			}
+
+			var payload = {
+				name: contactForm.querySelector('#name').value.trim(),
+				email: contactForm.querySelector('#email').value.trim(),
+				message: contactForm.querySelector('#message').value.trim()
+			};
+
+			if (submitBtn) submitBtn.disabled = true;
+			if (note) note.textContent = 'Sending…';
+
+			fgSupabase.from('contact_messages').insert(payload).then(function (result) {
+				if (submitBtn) submitBtn.disabled = false;
+				if (result.error) {
+					if (note) note.textContent = "Something went wrong — please try again or email us directly.";
+					return;
+				}
+				if (note) note.textContent = "Thanks! We'll get back to you within one business day.";
+				contactForm.reset();
+			});
 		});
 	}
 
