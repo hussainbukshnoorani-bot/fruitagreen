@@ -64,7 +64,7 @@ function fgInit() {
 			subtotal += lineTotal;
 			return (
 				'<div class="cart-item" data-id="' + id + '">' +
-					'<div class="cart-item__icon">' + product.icon + '</div>' +
+					'<div class="cart-item__icon"><img src="' + product.image + '" alt="" loading="lazy"></div>' +
 					'<div class="cart-item__body">' +
 						'<div class="cart-item__title">' + product.title + '</div>' +
 						'<div class="cart-item__price">' + money(product.price) + ' each</div>' +

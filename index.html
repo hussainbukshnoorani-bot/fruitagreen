@@ -75,22 +75,22 @@
 		</div>
 		<div class="fg-categories">
 			<a class="fg-category-card" data-filter="fresh-fruits" href="shop.html?cat=fresh-fruits">
-				<span class="fg-category-card__icon">🍎</span>
+				<span class="fg-category-card__icon"><img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&amp;fit=crop&amp;w=200&amp;q=80" alt="" loading="lazy"></span>
 				<span class="fg-category-card__title">Fresh Fruits</span>
 				<span class="fg-category-card__count">5 items</span>
 			</a>
 			<a class="fg-category-card" data-filter="fresh-vegetables" href="shop.html?cat=fresh-vegetables">
-				<span class="fg-category-card__icon">🥦</span>
+				<span class="fg-category-card__icon"><img src="https://images.unsplash.com/photo-1564874998499-1f3c14e9e8b6?auto=format&amp;fit=crop&amp;w=200&amp;q=80" alt="" loading="lazy"></span>
 				<span class="fg-category-card__title">Fresh Vegetables</span>
 				<span class="fg-category-card__count">5 items</span>
 			</a>
 			<a class="fg-category-card" data-filter="organic-picks" href="shop.html?cat=organic-picks">
-				<span class="fg-category-card__icon">🌿</span>
+				<span class="fg-category-card__icon"><img src="https://images.unsplash.com/photo-1683536905403-ea18a3176d29?auto=format&amp;fit=crop&amp;w=200&amp;q=80" alt="" loading="lazy"></span>
 				<span class="fg-category-card__title">Organic Picks</span>
 				<span class="fg-category-card__count">3 items</span>
 			</a>
 			<a class="fg-category-card" data-filter="combos-bundles" href="shop.html?cat=combos-bundles">
-				<span class="fg-category-card__icon">🧺</span>
+				<span class="fg-category-card__icon"><img src="https://images.unsplash.com/photo-1632507399767-207074cde63a?auto=format&amp;fit=crop&amp;w=200&amp;q=80" alt="" loading="lazy"></span>
 				<span class="fg-category-card__title">Combos &amp; Bundles</span>
 				<span class="fg-category-card__count">2 items</span>
 			</a>
@@ -219,7 +219,7 @@
 			return (
 				'<div class="product-card">' +
 					badge +
-					'<div class="product-card__media">' + p.icon + '</div>' +
+					'<div class="product-card__media"><img src="' + p.image + '" alt="' + p.title + '" loading="lazy"></div>' +
 					'<div class="product-card__title">' + p.title + '</div>' +
 					'<div class="product-card__desc">' + p.desc + '</div>' +
 					'<div class="product-card__price">' + priceHtml + '</div>' +

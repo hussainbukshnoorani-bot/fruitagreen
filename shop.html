@@ -120,7 +120,7 @@
 			return (
 				'<div class="product-card" data-categories="' + p.categories.join(',') + '">' +
 					badge +
-					'<div class="product-card__media">' + p.icon + '</div>' +
+					'<div class="product-card__media"><img src="' + p.image + '" alt="' + p.title + '" loading="lazy"></div>' +
 					'<div class="product-card__title">' + p.title + '</div>' +
 					'<div class="product-card__desc">' + p.desc + '</div>' +
 					'<div class="product-card__price">' + priceHtml + '</div>' +

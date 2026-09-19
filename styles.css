@@ -227,7 +227,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 	box-shadow: 0 10px 24px rgba(27, 77, 32, 0.14);
 }
 .fg-category-card.active { border-color: var(--fg-green-500); }
-.fg-category-card__icon { font-size: 2.4rem; display: block; margin-bottom: 12px; }
+.fg-category-card__icon { display: block; margin: 0 auto 12px; width: 64px; height: 64px; border-radius: 50%; overflow: hidden; }
+.fg-category-card__icon img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .fg-category-card__title { font-family: var(--fg-font-heading); font-weight: 600; color: var(--fg-green-900); display: block; margin-bottom: 4px; }
 .fg-category-card__count { font-size: 0.85em; color: var(--fg-text-muted); }
 
@@ -273,12 +274,10 @@ ul { margin: 0; padding: 0; list-style: none; }
 	background: var(--fg-green-100);
 	border-radius: var(--fg-radius-sm);
 	height: 120px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 3.2rem;
+	overflow: hidden;
 	margin-bottom: 14px;
 }
+.product-card__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .product-card__cat { font-size: 0.75em; color: var(--fg-text-muted); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 4px; }
 .product-card__title { font-size: 1.02em; margin-bottom: 6px; }
 .product-card__desc { font-size: 0.85em; color: var(--fg-text-muted); margin-bottom: 10px; flex-grow: 1; }
@@ -373,7 +372,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 .cart-drawer__close { background: none; border: none; font-size: 1.4em; cursor: pointer; color: var(--fg-text-muted); }
 .cart-drawer__items { flex: 1; overflow-y: auto; padding: 16px 24px; }
 .cart-item { display: flex; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--fg-border); align-items: center; }
-.cart-item__icon { font-size: 1.8em; width: 44px; height: 44px; background: var(--fg-green-100); border-radius: var(--fg-radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.cart-item__icon { width: 44px; height: 44px; background: var(--fg-green-100); border-radius: var(--fg-radius-sm); overflow: hidden; flex-shrink: 0; }
+.cart-item__icon img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .cart-item__body { flex: 1; min-width: 0; }
 .cart-item__title { font-weight: 600; font-size: 0.92em; margin-bottom: 2px; }
 .cart-item__price { font-size: 0.85em; color: var(--fg-text-muted); }
